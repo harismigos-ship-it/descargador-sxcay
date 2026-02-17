@@ -1,0 +1,41 @@
+
+> descargador-sxcay@0.1.0 build
+> next build
+
+Ôû▓ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 2 errors:
+./app/api/auth/[...nextauth]/route.js:1:1
+Module not found: Can't resolve 'next-auth'
+> 1 | import NextAuth from "next-auth"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import GoogleProvider from "next-auth/providers/google"
+  3 |
+  4 | export const authOptions = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./app/api/auth/[...nextauth]/route.js:2:1
+Module not found: Can't resolve 'next-auth/providers/google'
+  1 | import NextAuth from "next-auth"
+> 2 | import GoogleProvider from "next-auth/providers/google"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const authOptions = {
+  5 |     providers: [
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (./app/api/auth/[...nextauth]/route.js:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./app/api/auth/[...nextauth]/route.js:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
