@@ -24,9 +24,9 @@ COPY . .
 # Build the Next.js application
 RUN npm run build
 
-# Render uses a dynamic port, so we don't fix it to 3000
+# Port configuration
 ENV PORT=10000
 EXPOSE 10000
 
-# Start the application on the port provided by Render
-CMD ["sh", "-c", "npm start -- -p ${PORT:-10000}"]
+# Start the application
+CMD ["npm", "start"]
